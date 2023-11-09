@@ -42,6 +42,30 @@ export class HomePage implements OnInit {
       popupAnchor: [0,-10],      
     })
 
+    const miramar = leaf.icon({
+      iconUrl:"../../assets/icon/marcador.png",
+      iconSize:[20,30],
+      popupAnchor: [0,-10],      
+    })
+
+    const praimar = leaf.icon({
+      iconUrl:"../../assets/icon/marcador.png",
+      iconSize:[20,30],
+      popupAnchor: [0,-10],      
+    })
+
+    const balneario = leaf.icon({
+      iconUrl:"../../assets/icon/marcador.png",
+      iconSize:[20,30],
+      popupAnchor: [0,-10],      
+    })
+
     leaf.marker({lat:lat, lng:lng}, {icon:marcador}).addTo(this.mapa).bindPopup("Sua casa");
+
+    leaf.marker({lat:-23.9665146382376, lng:-46.33464071534059}, {icon:marcador}).addTo(this.mapa).bindPopup("Shopping Miramar R. Euclides da Cunha, 21 - Gonzaga, Santos - SP, 11065-900");
+
+    leaf.marker({lat:-23.976999299885785, lng:-46.3100000003104146}, {icon:marcador}).addTo(this.mapa).bindPopup("Shopping Praimar R. Alexandre Martins, 80 - Aparecida, Santos - SP, 11025-202");
+
+    leaf.marker({lat:-23.968941067606657, lng:-46.332401509817956}, {icon:marcador}).addTo(this.mapa).bindPopup("Shopping Balneario Av. Ana Costa, 549 - Gonzaga, Santos - SP, 11060-003");
   }  
 }
