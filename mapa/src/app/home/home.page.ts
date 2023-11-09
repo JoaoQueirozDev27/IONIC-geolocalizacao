@@ -34,7 +34,14 @@ export class HomePage implements OnInit {
       fillColor: '#018f75',
       fillOpacity: 0.5,
       radius: 50
-    }).addTo(this.mapa).bindPopup("Achou");
-  }
-  
+    }).addTo(this.mapa).bindPopup("Sua vizinhança");
+
+    const marcador = leaf.icon({
+      iconUrl:"../../assets/icon/marcador.png",
+      iconSize:[20,30],
+      popupAnchor: [0,-10],      
+    })
+
+    leaf.marker({lat:lat, lng:lng}, {icon:marcador}).addTo(this.mapa).bindPopup("Sua casa");
+  }  
 }
