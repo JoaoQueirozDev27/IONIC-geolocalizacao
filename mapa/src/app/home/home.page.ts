@@ -43,7 +43,7 @@ export class HomePage implements OnInit {
     })
 
     const miramar = leaf.icon({
-      iconUrl:"../../assets/icon/shopping.png",
+      iconUrl:"../../assets/icon/miramar.png",
       iconSize:[25,25],
       popupAnchor: [0,-10],      
     })
@@ -55,20 +55,20 @@ export class HomePage implements OnInit {
     })
 
     const balneario = leaf.icon({
-      iconUrl:"../../assets/icon/shopping.png",
+      iconUrl:"../../assets/icon/balneario.png",
       iconSize:[25,25],
       popupAnchor: [0,-10],      
     })
 
     const patioIporanga = leaf.icon({
-      iconUrl:"../../assets/icon/shopping.png",
+      iconUrl:"../../assets/icon/patioiporanga.png",
       iconSize:[25,25],
       popupAnchor: [0,-10],      
     })
 
     const EmbareSantos = leaf.icon({
-      iconUrl:"../../assets/icon/shopping.png",
-      iconSize:[25,25],
+      iconUrl:"../../assets/icon/embare.png",
+      iconSize:[35,25],
       popupAnchor: [0,-10],      
     })
 
