@@ -72,6 +72,19 @@ export class HomePage implements OnInit {
       popupAnchor: [0,-10],      
     })
 
+    const SaoFrancisco = leaf.icon({
+      iconUrl:"../../assets/icon/",
+      iconSize:[25,25],
+      popupAnchor: [0,-10]
+     
+    })
+
+    const ComercialRondon = leaf.icon({
+      iconUrl:"../../assets/icon/",
+      iconSize:[35,25],
+      popupAnchor: [0,10],
+    })
+
     leaf.marker({lat:lat, lng:lng}, {icon:marcador}).addTo(this.mapa).bindPopup("Sua casa");
 
     leaf.marker({lat:-23.9665146382376, lng:-46.33464071534059}, {icon:miramar}).addTo(this.mapa).bindPopup("Shopping Miramar R. Euclides da Cunha, 21 - Gonzaga, Santos - SP, 11065-900");
@@ -84,5 +97,9 @@ export class HomePage implements OnInit {
 
     leaf.marker({lat:-23.973796307413135, lng: -46.31875793579983}, {icon:EmbareSantos}).addTo(this.mapa).bindPopup("Shopping Embaré Santos Av. Dr. Epitácio Pessoa, 172 - Embaré, Santos - SP, 11040-096");
 
+    leaf.marker({lat:-23.97179, lng: -46.30740} , {icon:SaoFrancisco}).addTo(this.mapa).bindPopup("Shopping Center São Francisco  Av. Dr. Pedro Lessa, 1640 - Ponta da Praia, Santos - SP, 11025-002");
+
+    leaf.marker({lat: -23.97839, lng:-46.31120} , {icon:ComercialRondon}).addTo(this.mapa).bindPopup("Shopping Comercial Rondon Av. Dr. Epitácio Pessoa, 396 - Aparecida, Santos - SP, 11030-600");
   }  
+
 }
